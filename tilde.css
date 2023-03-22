@@ -1,0 +1,7 @@
+h1 ~ div {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+    border: 3px dashed black;
+}
