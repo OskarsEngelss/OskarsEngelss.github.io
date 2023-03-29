@@ -18,9 +18,28 @@ li {
     transition: transform 0.5s;
 }
 
-li:hover {
-    transform: translateX(13px);
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvv Animations for the header vvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+.homeButton:hover {
+    transform: translateX(-13px) rotate(-3.5deg);
 }
+.aboutButton:hover {
+    transform: translateX(-7px) rotate(-1.5deg);
+}
+.workButton:hover {
+    transform: translateX(7px) rotate(1.5deg);
+}
+.misButton:hover {
+    transform: translateX(13px) rotate(3.5deg);
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(123, 207, 207), 0 0 40px rgb(123, 207, 207), 0 0 50px rgb(123, 207, 207), 0 0 60px rgb(123, 207, 207), 0 0 70px rgb(123, 207, 207);
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px rgb(178, 250, 250), 0 0 40px rgb(178, 250, 250), 0 0 50px rgb(178, 250, 250), 0 0 60px rgb(178, 250, 250), 0 0 70px rgb(178, 250, 250), 0 0 80px rgb(178, 250, 250);
+    }
+}
+
 
 a {
     text-decoration: none;
@@ -32,6 +51,7 @@ a {
 
 a:hover {
     color: rgb(178, 250, 250);
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 .burger {
@@ -70,7 +90,7 @@ a:hover {
         align-items: center;
         display: none;
     }
-
+    
     li {
         padding-bottom: 20px;
     }
