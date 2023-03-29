@@ -1,0 +1,7 @@
+body > button {
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(173, 216, 233);
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
