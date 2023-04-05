@@ -1,14 +1,14 @@
 * {
-    font-family: monospace;
+    font-family: monospace;            /* Iedod VISAM tekstam mājaslapā noteikto fontu */
 }
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;           /* Nodrošina to, ka automātiskais scrolls izskatīsies labi (neteleportēsies) */
 }
 body {
     margin: 0;
     overflow-x: hidden;
     
-    background-image: url("https://wallpapercave.com/wp/wp7925786.jpg");
+    background-image: url("https://wallpapercave.com/wp/wp7925786.jpg");        /* Iedod pirmo fonu */
     background-repeat: no-repeat;
     background-size: 100vw 865px;
     background-attachment: fixed;
@@ -46,22 +46,25 @@ ul {
 }
 
 li {
-    list-style: none;
     transition: transform 0.5s;
 }
 
         /* vvvvvvvvvvvvvvvvvvvvvvvvvvvv Animations for the header vvvvvvvvvvvvvvvvvvvvvvvvvvvv */
 .homeButton:hover {
     transform: translateX(-13px) rotate(-3.5deg) scale(1.1);
+    list-style: none;
 }
 .aboutButton:hover {
     transform: translateX(-7px) rotate(-1.5deg) scale(1.1);
+    list-style: none;
 }
 .workButton:hover {
     transform: translateX(7px) rotate(1.5deg) scale(1.1);
+    list-style: none;
 }
 .misButton:hover {
     transform: translateX(13px) rotate(3.5deg) scale(1.1);
+    list-style: none;
 }
         /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Animations for the header ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
@@ -164,7 +167,7 @@ main {
     height: 380px; 
     margin-left: 70px;
     border-radius: 40px;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .titlePhoto:hover {
@@ -178,7 +181,30 @@ main {
         align-items: center;
     }
     .titlePhoto {
-        margin-top: 20px;
+        margin: 20px 0 0 0;
+    }
+}
+@media (max-width: 760px) {
+    .titlePhoto {
+        transform: scale(0) rotate(540deg);
+        transition: 0.5s;
+        width: 0px;
+        height: 0px;
+    }
+    main {
+        height: 500px;
+    }
+    .mainTitleHolder {
+        width: 500px;
+        height: 220px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 70px;
     }
 }
 
@@ -189,26 +215,32 @@ main {
 }
 /* vvvvvvvvvvvvvvvvvvvvvvvvvvvv About me portion vvvvvvvvvvvvvvvvvvvvvvvvvvvv */
 
-#article-aboutMe {
+#article-aboutMe {                  /* Izskats priekš "Par mani" sekcijas */
     margin-top: 100px;
     width: 100vw;
     height: 900px;
     
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;            /* Izlīdzi objektus, lai tie būtu centrā */
     flex-wrap: wrap;
     flex-direction: row;
 
-    background-image: url("https://wallpapercave.com/wp/wp8911831.jpg");
+    background-image: url("https://wallpapercave.com/wp/wp8911831.jpg");    /* Iedod "Par mani" sekcijai fonu un tad fonam piešķir dažas īpašības*/
     background-size: cover;
     background-attachment: fixed;
 }
-.aboutMePhoto {
+.aboutMePhoto {                 /* Izskats priekš bildes iekš "Par mani" */
     width: 450px;
     height: 600px;
     margin-right: 70px;
     border-radius: 70px;
+    transition: 2.5s;           /* Laiks, kurā bilde atkal pārādas*/
+}
+.aboutMePhoto:hover {
+    opacity: 0;                     /* Kad tiek pārvilkts pāri bildei, tā lēnām izzūd */
+    transform: rotate(540deg) scale(0);
+    transition: 1.2s;               /* Laiks, kurā tas notiek */
 }
 
 .aboutMeInfoHolder {
@@ -392,6 +424,31 @@ main {
 
 #contactInfo {
     width: 100vw;
-    height: 200px;
-    background-color: rgb(36, 36, 36);
+    height: 300px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+
+    background-color: rgb(0, 0, 27);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.moreImportant {
+    font-size: 19px;
+}
+
+.contactIcons {
+    width: 60px;
+    height: 40px;
+}
+
+.iconsHolder {
+    display: flex;
+    align-items: center;
 }
