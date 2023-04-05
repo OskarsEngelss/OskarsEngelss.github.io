@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="photoManager.css">
+    <script src="photoManager.js" defer></script>          <!-- Defer liek html kodam iziet cauri, PIRMS JavaScript koda -->
+    <title>Attēlu kartiņas</title>
+</head>
+<body>
+    <div class="titleDiv">
+        <h1 class="webTitle">Attēlu kartiņas</h1>
+    </div>
+    <div class="webMidlleDiv">
+        <div class="blackSides">
+            <!-- right side color -->
+        </div>
+        <div class="mainInfo">
+            <form onsubmit="handleSubmit(event)">
+                <div class="paddingInput">
+                    <lable for="descriptionTitleInput">Nosaukums:</lable>
+                    <br>
+                </div>
+                <div class="paddingInput">
+                    <input type="text" id="descriptionTitleInput">
+                    <br>
+                </div>
+                <div class="paddingInput">
+                    <lable for="descriptionParagraphInput">Apraksts:</lable>
+                    <br>
+                </div>
+                <div class="paddingInput">
+                    <input type="text" id="descriptionParagraphInput">
+                    <br>
+                </div>
+                <div class="paddingInput">
+                    <lable for="imageInput">Avots:</lable>
+                <br>
+                </div>
+                <div class="paddingInput">
+                    <input type="text" id="imageInput">
+                <br>
+                </div>
+                <div class="paddingInput">
+                    <button class="sendOffButton">Pievienot</button>
+                </div>
+            </form>
+        </div>
+        <div class="blackSides">
+            <!-- left side color -->
+        </div>
+    </div>
+    <div id="inputHolder">
+        <!-- here is where the newly made divs go -->
+    </div>
+</body>
+</html>

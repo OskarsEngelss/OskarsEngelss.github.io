@@ -1,0 +1,129 @@
+* {
+    font-family: monospace;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(186, 186, 186);
+    width: 100%;
+    height: auto;
+}
+
+.webTitle {
+    text-align: center;
+    margin: 0;
+    font-size: 45px;
+    font-weight: 900;           /* Izskats mājaslapas nosaukumam */
+}
+
+.webMidlleDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;                /* Izskats priekš ievada un melnajām malām */
+    margin: 0;
+}
+
+.titleDiv {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;            /* Izskats mājaslapas nosaukuma turētājam */
+}
+
+.blackSides {
+    background-color: rgb(35, 35, 35);          /*Tumšās malas pie ievadiem */
+    width: 100vw;
+    height: 380px;
+}
+
+.mainInfo {
+    color: white;
+    width: 800px;
+    height: 380px;
+    background-color: rgb(91, 6, 6);            /* Izskats sarkanajai daļai kur ievada */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inputHolder {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;                           /* Izskats kartiņu turētājam */
+    align-items: center;
+    justify-content: center;
+}
+
+.imageDiv {
+    display: inline-block;
+    margin: 30px 38px;
+    border-radius: 8px;
+    background-color: rgb(114, 25, 25);         /* Kartiņu izskats parasti */
+    width: 430px;
+    height: auto;
+    cursor: pointer;
+}
+
+.imageDivLimited {
+    display: inline-block;
+    margin: 30px 38px;
+    border-radius: 8px;
+    background-color: rgb(114, 25, 25);         /* Kartiņu izskats, ja teksts part garu */
+    width: 430px;
+    height: 530px;
+    cursor: pointer;
+    overflow: auto;
+}
+
+.imageLinkLimited {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px 0 0 0;             /* Bildes izskats (tā bilde kuru ievieto kartiņa) */
+}
+
+.imageLink {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px 8px 0 0;             /* Bildes izskats (tā bilde kuru ievieto kartiņa) */
+}
+
+.paddingInput {
+    margin: 20px 40px;          /* Lai atdalītu lable un input */
+    font-size: 25px;
+}
+
+#descriptionTitleInput {
+    width: 498px;
+    height: 25px;           /* Lai pagarinātu ievades lauku */
+}
+
+#descriptionParagraphInput {
+    width: 498px;
+    height: 25px;           /* Lai pagarinātu ievades lauku */
+}
+
+#imageInput {
+    width: 498px;
+    height: 25px;           /* Lai pagarinātu ievades lauku */
+}
+
+.sendOffButton {
+    margin: 5px 0;
+    color: white;
+    background-color: rgb(35, 35, 35);              /* Izskats pievienošanas pogai */
+    border: 1px white solid;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.descriptionTitle {
+    padding: 0px 15px;                  /* Izskats kartiņas nosaukumam */
+    font-size: 35px;
+    margin: 10px 0 0 0;
+}
+
+.descriptionParagraph {
+    padding: 2px 15px;
+    font-size: 18px;                    /* Izskats kartiņas aprakstam */
+    margin: 10px 0 5px 0;
+}

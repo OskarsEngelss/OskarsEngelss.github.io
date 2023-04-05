@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.titleHolder {
+    width: 100vw;
+    background-color: lightyellow;
+    height: 10vh;
+    border-bottom: black solid 1vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 6vh;
+}
+
+.sky {
+    background-color: lightblue;
+    width: 100vw;
+    height: 65vh;
+}
+
+.grass {
+    background-color: darkgreen;
+    width: 100vw;
+    height: 25vh;
+}
+
+.cube {
+    background-color: rgb(202, 33, 33);
+    width: 7vw;
+    height: 12vh;
+    position: absolute;
+    top: 63vh;
+    left: 9vw;
+    animation: cubesMoves 17s infinite, spin 17s infinite;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    /* 50% {transform: rotate(0deg);}
+    55% {transform: rotate(360deg);} */
+    68% {transform: rotate(0deg);}
+    /* 70% {transform: rotate(360deg);}
+    80% {transform: rotate(0deg);}
+    85% {transform: rotate(360deg);}
+    90% {transform: rotate(0deg);}
+    94% {transform: rotate(360deg);}
+    96% {transform: rotate(24deg);}
+    98% {transform: rotate(24deg);} */
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes cubesMoves {
+    0% {left: 9vw; top: 63vh;}
+    30% {left: 45vw; top: 63vh;}
+    36% {left: 45vw; top: 43vh;}
+    42% {left: 45vw; top: 63vh;}
+    45% {left: 45vw; top: 63vh;}
+    53% {left: 45vw; top: 23vh;}
+    59% {left: 45vw; top: 63vh;}
+    63% {left: 35vw; top: 63vh;}
+    69% {left: 35vw; top: 12vh;}
+    83% {left: 108vw; top: 12vh;}
+    84.2% {left: 106vw; top: 107vh;}
+    84.4% {left: -8vw; top: 107vh;}
+    84.6% {left: -8vw; top: 12vh;}
+    97% {left: 9vw; top: 63vh;}
+    
+}
+
+.cloudTop {
+    background-color: whitesmoke;
+    width: 7vw;
+    height: 5vh;
+    border-radius: 2vh 2vh 0 0;
+    position: absolute;
+    top: 17vh;
+    left: 13.5vw;
+}
+
+.cloudMiddle {
+    background-color: whitesmoke;
+    width: 14vw;
+    height: 5vh;
+    border-radius: 2vh 2vh 2vh 2vh;
+    position: absolute;
+    top: 22vh;
+    left: 10vw;
+}
+
+.cloudBottom {
+    background-color: whitesmoke;
+    width: 8vw;
+    height: 2vh;
+    border-radius: 0 0 2vh 2vh;
+    position: absolute;
+    top: 27vh;
+    left: 15vw;
+}
+
+.leavesTop {
+    width: 9vw;
+    height: 7vh;
+    background-color: rgb(97, 182, 72);
+    position:absolute;
+    top: 24vh;
+    left: 63vw;
+}
+
+.leavesMiddle {
+    width: 15vw;
+    height: 7vh;
+    background-color: rgb(97, 182, 72);
+    position:absolute;
+    top: 31vh;
+    left: 60vw;
+}
+
+.leavesBottom {
+    width: 21vw;
+    height: 7vh;
+    background-color: rgb(97, 182, 72);
+    position:absolute;
+    top: 38vh;
+    left: 57vw;
+}
+
+.treeTrunk {
+    background-color: rgba(139, 27, 27, 0.664);
+    width: 5vw;
+    height: 30vh;
+    position:absolute;
+    top: 45vh;
+    left: 65vw;
+}
