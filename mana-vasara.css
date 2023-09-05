@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(228, 228, 228);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: cursive;
+}
+
+main {
+    display: flex;
+}
+
+article {
+    width: auto;
+    height: auto;
+
+    margin: 20px 10px 20px 10px;
+    padding: 20px 50px 40px 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(124, 180, 124);
+}
+
+p {
+    color: white;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.imageHolder {
+    width: 250px;
+    height: 450px;
+    
+    background-color: black;
+}
